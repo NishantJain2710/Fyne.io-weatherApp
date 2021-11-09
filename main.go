@@ -46,7 +46,7 @@ func main() {
 	label5.Disable()
 
 	combo := widget.NewSelect([]string{"delhi", "noida", "faridabad", "gurgaon"}, func(value string) {
-		res, err := http.Get("https://api.openweathermap.org/data/2.5/weather?q=" + value + "&appid=6989ad187bcd36031a746f9685c5bc33")
+		res, err := http.Get("https://api.openweathermap.org/data/2.5/weather?q=" + value + "&appid=-----------apiKey-----------------")
 		if err != nil {
 			fmt.Println(err)
 		} else {
